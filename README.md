@@ -83,7 +83,7 @@ END
 flowchart TD
     A([Start]) --> B[/Input Number/]
     B --> C[i = 0]
-    C --> D[i =i++1]
+    C --> D[i = i + 1]
     D --> E[/Display Number * i/]
     E --> F{"i >= 10"}
     F -->|Yes| G([End])
@@ -104,7 +104,7 @@ START
     IF Number > 0      
         Display "positive"
     ELSE IF  Number < 0
-        Display = "negative"
+        Display "negative"
     Else
         Display "zero"
     ENDIF
@@ -117,10 +117,10 @@ End
 flowchart TD
     A([Start]) --> B[/INPUT number/]
     B --> C{"number > 0"}
-    C -->|Yes| D[/"Print#quot;positive#quot;"/]
+    C -->|Yes| D[/"Print #quot;positive#quot;"/]
     C -->|No| E{"number < 0"}
     D --> F([End])
-    E -->|Yes| G[/"Print#quot;negative#quot;"/]
+    E -->|Yes| G[/"Print #quot;negative#quot;"/]
     E -->|No| H[/"Print #quot;zero#quot;"/]
     G --> F
     H --> F
